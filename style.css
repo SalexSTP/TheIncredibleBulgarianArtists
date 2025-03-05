@@ -1,0 +1,245 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 0.75rem !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem !important;  /* Increased size for the brand text */
+    color: #fff;
+    text-decoration: none;
+    margin-top: -5px;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 1.25rem !important; /* Increased size for nav links */
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.page-header {
+    margin-top: 35px !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 55px !important;
+}
+
+p {
+    font-size: 23px !important;
+}
+
+.home-info-first {
+    margin-top: 35px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    display: flex !important;
+
+    .optimus-info {
+        align-self: center;
+    }
+
+    .tesla-img {
+        min-width: 250px;
+        margin-right: 50px;
+        border-radius: 10px;
+    }
+
+    .optimus-img {
+        width: 250px;
+        margin-left: 50px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .optimus-img:hover {
+        transform: scale(1.2); /* Zooms the image by 10% */
+    }
+}
+
+.home-info-second {
+    margin-top: 35px;
+    margin-left: 200px;
+    margin-right: 200px;
+
+    display: flex !important;
+
+    .optimus-info {
+        align-self: center;
+    }
+
+    .optimus-img {
+        min-width: 250px;
+        margin-left: 50px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .optimus-img:hover {
+        transform: scale(1.2); /* Zooms the image by 10% */
+    }
+}
+
+.robot-states {
+    display: flex !important;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.tesla-robot-img {
+    transition: transform 0.3s ease;
+}
+
+.tesla-robot-img:hover {
+    transform: scale(1.2); /* Zooms the image by 10% */
+}
+
+.design-features-info {
+    margin-top: 35px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex !important;
+    p {
+        margin: 30px;
+    }
+}
+
+.specs-features-info {
+    margin-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: center;
+    display: flex !important;
+}
+
+/* Slideshow container */
+.automatic-slideshow {
+    position: relative;
+    max-width: 600px !important; /* Adjust this value to your preference */
+    min-width: 600px !important;
+    max-height: 350px !important; /* Adjust this value to fit your images properly */
+    min-height: 350px !important;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for each slide */
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ensure the image fills the container width */
+    height: 100%;  /* Ensure the image fills the container height */
+    object-fit: cover;  /* Ensures the image covers the container without distortion */
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Make the current slide visible */
+.slide.active {
+    display: flex !important;
+    opacity: 1 !important;  /* Make the current slide visible */
+}
+
+/* Manual slideshow */
+.manual-slideshow {
+    position: relative;
+    max-width: 690px !important; /* Adjust this value to your preference */
+    min-width: 690px !important;
+    max-height: 350px !important; /* Adjust this value to fit your images properly */
+    min-height: 350px !important;
+    overflow: hidden;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.manualSlides {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+
+}
+
+.arrow-button:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+}
+.arrow-button:hover {
+    color:#000 !important;
+    background-color:#ccc !important;
+}
+
+.arrow-left {
+    color:#ccc !important;
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
+}
+.arrow-right {
+    color:#ccc !important;
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: rgb(33, 37, 41);
+    color: #ddd;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+
+/* General reset for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
