@@ -78,8 +78,12 @@ p {
     }
 }
 
+.info {
+    align-content: center;
+}
+
 .home-info-second {
-    margin-top: 35px;
+    margin-top: -60px;
     margin-left: 200px;
     margin-right: 200px;
 
@@ -87,6 +91,7 @@ p {
 
     .optimus-info {
         align-self: center;
+        margin-right: 30px;
     }
 
     .optimus-img {
@@ -157,6 +162,8 @@ p {
     object-fit: cover;  /* Ensures the image covers the container without distortion */
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
+    justify-content: center;
+    background-color: orange;
 }
 
 /* Make the current slide visible */
@@ -167,23 +174,21 @@ p {
 
 /* Manual slideshow */
 .manual-slideshow {
-    position: relative;
-    max-width: 690px !important; /* Adjust this value to your preference */
-    min-width: 690px !important;
-    max-height: 350px !important; /* Adjust this value to fit your images properly */
-    min-height: 350px !important;
-    overflow: hidden;
-    margin-top: 15px;
     border-radius: 10px;
-    border-style: outset;
-    border-width: 1px;
-    border-color: #000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;    /* Ширина на карусела */
+    margin: 0 auto;      /* Центрираме карусела в родителския контейнер */
+    overflow: hidden;    /* Скриваме всичко, което излиза извън контейнера */
+    height: 500px;       /* Увеличаваме височината на карусела */
+    display: flex;       /* Използваме flexbox за центриране */
+    justify-content: center; /* Центрираме по хоризонтала */
+    align-items: center; /* Центрираме по вертикала */
+    position: relative;
 }
 
 .manualSlides {
-    width: 100%;
-    height: 100%;
+    object-fit: fill;
+    width: 100%;         /* Изображението ще запълва целия контейнер по ширина */
+    height: 100%;        /* Изображението ще запълва целия контейнер по височина */
 }
 
 .arrow-button {
@@ -234,6 +239,7 @@ p {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 /* Responsive Design */

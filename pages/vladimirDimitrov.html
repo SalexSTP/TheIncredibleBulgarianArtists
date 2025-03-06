@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Владимир Димитров - Майстора</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Навигационен бар -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/pages/index.html">Невероятните български художници</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/index.html">Начало</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Художници
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/pages/georgiBojilov.html">Георги Божилов</a></li>
+                            <li><a class="dropdown-item" href="/pages/zlatyoBoqdjiev.html">Роден Златю Бояджиев</a></li>
+                            <li><a class="dropdown-item" href="/pages/vladimirDimitrov.html">Владимир Димитров - Майстора</a></li>
+                            <li><a class="dropdown-item" href="/pages/ivanMyrkvichka.html">Иван Мърквичка</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="page-header">
+        <h1>Владимир Димитров - Майстора</h1>
+    </div>
+
+    <div class="home-info-first">
+        <div class="tesla-robot-img" style="margin-right: 30px;">
+            <img class="tesla-img" src="/imgs/VladimirDimitrov/Vladimir_Dimitrov_-_Maistora.jpg" style="height: 400px;">
+        </div>
+
+        <div class="info">
+            <p class="optimus-info">Владимир Димитров – Майстора е един от най-емблематичните български художници. Роден през 1882 г. в село Фролош, той завършва Рисувалното училище (днес Национална художествена академия) през 1903 г.</p>
+            <p class="optimus-info">Творчеството му е посветено на българското село, като изобразява жътвари, орачи и моми в ярки, наситени цветове и идеализирани форми. Стилът му е разпознаваем със силна декоративност, символика и хармония между човека и природата.</p>
+        </div>
+    </div>
+
+    <div class="home-info-second" style="margin-top: -15px;">
+        <div class="info">
+            <p class="optimus-info">Негови произведения са част от колекциите на Националната художествена галерия и редица музеи. Приживе е признат за народен художник и остава в историята с неповторимата си живопис, вдъхновена от българския бит и дух.</p>
+        </div>
+
+        <div class="optimus-img-container" style="width: 500px;">
+            <div class="automatic-slideshow">
+                <div class="slide">
+                    <img src="/imgs/VladimirDimitrov/651b0c4343bab74ce3acf365_maistora_painting.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/imgs/VladimirDimitrov/vladimir-dimitrov-majstora-kartina-3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manual-slideshow" style="width: 1000px; margin-top: 40px;"> 
+        <img class="manualSlides" src="/imgs/VladimirDimitrov/1280px-Plovdiv-Gallery-Maistora.jpg">
+        <img class="manualSlides" src="/imgs/VladimirDimitrov/624-400-vladimir-dimitrov-hudozhnik-izlozhba-kartini-mol-paradise-center-izkustvo-zhivopis.jpg">
+        <button class="arrow-button arrow-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="arrow-button arrow-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Невероятните български художници. Всички права запазени.</p>
+    </footer>
+</html>

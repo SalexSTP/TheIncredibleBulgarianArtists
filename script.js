@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Increment slideIndex
         slideIndex++;
-        if (slideIndex == 3) {
+        if (slideIndex == 2) {
             slideIndex = 0;  // Loop back to the first slide
         }
         console.log("Slides:", slides);  // Check if slides are being selected
